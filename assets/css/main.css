@@ -31,9 +31,9 @@
   --zindex-menu: 1000;
   --zindex-fixed: 1010;
 
-  /* With & Height 
+  /* Width & Height 
   ------------------*/
-  --width-container: 98rem;
+  --width-container: 80%;
   --height-header: 10rem;
   --height-header--scroll: 8rem;
 
@@ -104,7 +104,7 @@ body {
 /* Reusable CSS
 --------------------------------------------------------------*/
 .container {
-  width: 90%;
+  width: 100%;
   max-width: var(--width-container);
   margin: auto;
 }
@@ -235,6 +235,48 @@ body {
 }
 
 .nav__toggle:hover {
+  color: var(--color-primary);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: white;
+}
+
+.fa-sun {
   color: var(--color-primary);
 }
 

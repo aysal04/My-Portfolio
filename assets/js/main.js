@@ -42,18 +42,18 @@ const testimonialSlide = new Swiper(".testimonial__wrapper", {
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: true
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: true
   },
 
   breakpoints: {
     520: {
-      slidesPerView: "auto",
-    },
-  },
+      slidesPerView: "auto"
+    }
+  }
 });
 
 // header scroll animation
@@ -65,12 +65,36 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const checkbox = document.getElementById("checkbox");
+const root = document.querySelector(":root");
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    root.style.setProperty("--color-primary", "#815B5B");
+    root.style.setProperty("--color-primary-dark", "#594545");
+    root.style.setProperty("--color-bg-primary", "#FFF8EA");
+    root.style.setProperty("--color-bg-secondary", "#FFF8EA");
+    root.style.setProperty("--color-bg-footer", "##FFF8EA");
+    root.style.setProperty("--color-white", "#06283D");
+    root.style.setProperty("--color-text", "#06283D");
+    root.style.setProperty("--color-border", "#06283D");
+  } else {
+    root.style.setProperty("--color-primary", "#25ab75");
+    root.style.setProperty("--color-primary-dark", "#208c61");
+    root.style.setProperty("--color-bg-primary", "#1a1a1a");
+    root.style.setProperty("--color-bg-secondary", "#242424");
+    root.style.setProperty("--color-bg-footer", "#151515");
+    root.style.setProperty("--color-white", "#ffffff");
+    root.style.setProperty("--color-text", "#676767");
+    root.style.setProperty("--color-border", "#373737");
+  }
+});
+
 // ScrollReveal animations
 const sr = ScrollReveal({
   duration: 2000,
   distance: "100px",
   delay: 400,
-  reset: false,
+  reset: false
 });
 
 sr.reveal(".hero__content, .about__content");
@@ -80,12 +104,12 @@ sr.reveal(
   ".hero__info-wrapper, .skills__title, .skills__content, .qualification__name, .qualification__item, .service__card, .project__content, .testimonial__wrapper, .footer__content",
   {
     delay: 500,
-    interval: 100,
+    interval: 100
   }
 );
 
 sr.reveal(".qualification__footer-text, .contact__content", {
-  origin: "left",
+  origin: "left"
 });
 
 sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });

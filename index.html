@@ -1,377 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <!--=================== Google Fonts ====================-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--=================== Remixicons ====================-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!--=================== SwiperJS CSS ====================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--=================== Main CSS ====================-->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body theme="light">
     <!--=================== Header ====================-->
     <header id="header" class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="nav__brand">
-                    <i class="ri-code-s-slash-line"></i>Student Developer
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#hero" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">Qualification</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#service" class="nav__link">PoRs</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">Projects</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__toggle">
-                    <i id="nav-toggle" class="ri-menu-3-line"></i>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__brand">
+            <i class="ri-code-s-slash-line"></i>Student Developer
+          </a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#hero" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#qualification" class="nav__link">Qualification</a>
+              </li>
+              <li class="nav__item">
+                <a href="#service" class="nav__link">PoRs</a>
+              </li>
+              <li class="nav__item">
+                <a href="#project" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+              <li class="nav__item">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class='fas fa-sun'></i>
+                  <div class='ball'>
+                </label>
+            </li>
+            </ul>
+          </div>
+          <div class="nav__toggle">
+            <i id="nav-toggle" class="ri-menu-3-line"></i>
+          </div>
+        </nav>
+      </div>
     </header>
     <!--=================== main ====================-->
     <main class="main">
-        <!--=================== Hero ====================-->
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="d-grid hero__wrapper">
-                    <div class="hero__content">
-                        <h1 class="hero__title">Hi, I am Lasya,<br>Student at IIT Bhilai.</h1>
-                        <p class="hero__description">I'm an extrovert who's enthusiastic in learning new things and exploring.To know more about me , go through the webpage! </p>
-                        <div class="hero__info">
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">02</p>
-                                <h2 class="hero__info-title">Years<br>Experience , lol im freshie</h2>
-                            </div>
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">10+</p>
-                                <h2 class="hero__info-title">Awards<br>Recieved</h2>
-                            </div>
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">02+</p>
-                                <h2 class="hero__info-title">Companies<br> Worked</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="" alt="Lasya" class="hero__img">
+      <!--=================== Hero ====================-->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="d-grid hero__wrapper">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Hi, I am Lasya,<br />Student at IIT Bhilai.
+              </h1>
+              <p class="hero__description">
+                I'm an extrovert who's enthusiastic in learning new things and
+                exploring.To know more about me , go through the webpage!
+              </p>
+              <div class="hero__info">
+                <div class="hero__info-wrapper">
+                  <p class="hero__info-number">02</p>
+                  <h2 class="hero__info-title">
+                    Years<br />Experience , lol im freshie
+                  </h2>
                 </div>
+                <div class="hero__info-wrapper">
+                  <p class="hero__info-number">10+</p>
+                  <h2 class="hero__info-title">Awards<br />Recieved</h2>
+                </div>
+                <div class="hero__info-wrapper">
+                  <p class="hero__info-number">02+</p>
+                  <h2 class="hero__info-title">
+                    Companies<br />
+                    Worked
+                  </h2>
+                </div>
+              </div>
             </div>
-        </section>
+            <img src="" alt="Lasya" class="hero__img" />
+          </div>
+        </div>
+      </section>
 
-        <!--=================== About ====================-->
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">Who am I</span>
-                </div>
-                <div class="d-grid about__wrapper">
-                    <div class="about__content">
-                        <h3 class="about__title">I'm a Student and Beginner Web Developer.</h3>
-                        <p class="about__description">Am a student a IIT bhilai pursuing computer science from 2021 . I found webdev facinating and started learning it.</p>
-                    </div>
-                    <div class="skills">
-                        <h3 class="skills__title">Technologies I've been working with:</h3>
-                        <div class="skills__wrapper">
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Languages</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Python</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        C</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Html</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        CSS</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Javascript</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        React</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Platforms</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Windows 11</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Linux/Ubuntu</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!--=================== About ====================-->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Who am I</span>
+          </div>
+          <div class="d-grid about__wrapper">
+            <div class="about__content">
+              <h3 class="about__title">
+                I'm a Student and Beginner Web Developer.
+              </h3>
+              <p class="about__description">
+                Am a student a IIT bhilai pursuing computer science from 2021 .
+                I found webdev facinating and started learning it.
+              </p>
             </div>
-        </section>
-
-        <!--=================== Qualification ====================-->
-        <section id="qualification" class="section qualification">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Qualification</h2>
-                    <span class="section__subtitle">Experience & Education</span>
+            <div class="skills">
+              <h3 class="skills__title">
+                Technologies I've been working with:
+              </h3>
+              <div class="skills__wrapper">
+                <div class="skills__content">
+                  <h4 class="skills__subtitle">Languages</h4>
+                  <ul class="skills__list">
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Python
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> C
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Html
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> CSS
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Javascript
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> React
+                    </li>
+                  </ul>
                 </div>
-                <!--============== Professional Experience ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-briefcase-fill"></i>
-                        Professional Experience
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Experience 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title"></h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Facere,esse ullam
-                                nemo velit voluptatum excepturi.</p>
-                            <span class="qualification__date"></span>
-                        </div>
-                        <!-- Experience 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title"></h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Facere,esse ullam
-                                nemo velit voluptatum excepturi.</p>
-                            <span class="qualification__date"></span>
-                        </div>
-                        <!-- Experience 3-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title"></h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Facere,esse ullam
-                                nemo velit voluptatum excepturi.</p>
-                            <span class="qualification__date"></span>
-                        </div>
-                    </div>
+                <div class="skills__content">
+                  <h4 class="skills__subtitle">Platforms</h4>
+                  <ul class="skills__list">
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Windows 11
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Linux/Ubuntu
+                    </li>
+                  </ul>
                 </div>
-                <!--============== Education ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-booklet-fill"></i>
-                        Education
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Education 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Sri Chaitanya High School</h3>
-                            <p class="qualification__description">Secured 10GPA in SSC board examination. Class leader for three consecutive years</p>
-                            <span class="qualification__date">2012 - 2019</span>
-                        </div>
-                        <!-- Education 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Viswasai Junior College</h3>
-                            <p class="qualification__description">Secured 97.9% in Intermediate state board examination.Obtained good ranks in after 12th competative exams.</p>
-                            <span class="qualification__date">2019 - 2021</span>
-                        </div>
-                        <!-- Education 3-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Under graduate at IIT Bhilai</h3>
-                            <p class="qualification__description">Pursuing Second year in computer science.Acquired hands knowledge on trending programming laguages and web development.</p>
-                            <span class="qualification__date">2021 - 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="qualification__footer">
-                    <p class="qualification__footer-text">See my full resume</p>
-                    <a href="#" class="btn btn--primary">Resume</a>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--=================== services ====================-->
-        <section id="service" class="section service">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Position of Responsibilites</h2>
-                    <span class="section__subtitle">PoRs</span>
-                </div>
-                <div class="d-grid service__wrapper">
-                    <!--========= service card 1 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-layout-4-fill"></i>
-                        </div>
-                        <h3 class="service__title">Management committee_NSSbr>Executive</h3>
-                    </div>
-                    <!--========= service card 2 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-code-s-slash-line"></i>
-                        </div>
-                        <h3 class="service__title">Drishya, Renaissance<br>IIC</h3>
-                    </div>
-                    <!--========= service card 3 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-pen-nib-fill"></i>
-                        </div>
-                        <h3 class="service__title">Student Mentor<br>In student mentorship program 2022</h3>
-                    </div>
-                </div>
+      <!--=================== Qualification ====================-->
+      <section id="qualification" class="section qualification">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Experience & Education</span>
+          </div>
+          <!--============== Professional Experience ============-->
+          <div class="qualification__wrapper">
+            <h3 class="qualification__name">
+              <i class="ri-briefcase-fill"></i>
+              Professional Experience
+            </h3>
+            <div class="d-grid qualification__content">
+              <!-- Experience 1-->
+              <div class="qualification__item">
+                <h3 class="qualification__title"></h3>
+                <p class="qualification__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere,esse ullam nemo velit voluptatum excepturi.
+                </p>
+                <span class="qualification__date"></span>
+              </div>
+              <!-- Experience 2-->
+              <div class="qualification__item">
+                <h3 class="qualification__title"></h3>
+                <p class="qualification__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere,esse ullam nemo velit voluptatum excepturi.
+                </p>
+                <span class="qualification__date"></span>
+              </div>
+              <!-- Experience 3-->
+              <div class="qualification__item">
+                <h3 class="qualification__title"></h3>
+                <p class="qualification__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere,esse ullam nemo velit voluptatum excepturi.
+                </p>
+                <span class="qualification__date"></span>
+              </div>
             </div>
-        </section>
-
-        <!--=================== Projects ====================-->
-        <section id="project" class="section project">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Projects</h2>
-                    <span class="section__subtitle">My recent work</span>
-                </div>
-                <div class="d-grid project__wrapper">
-                    <!--============== project 1 =============-->
-                    <div class="project__content">
-                        <img src="" alt="To Do List" class="project__img">
-                        <h3 class="project__title">To Do List</h3>
-                        <p class="project__description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere,esse ullam
-                            nemo velit voluptatum excepturi.</p>
-                    </div>
-                    <!--============== project 2 =============-->
-                    <div class="project__content">
-                        <img src="" alt="Google Keeper clone " class="project__img">
-                        <h3 class="project__title">Google Keeper clone</h3>
-                        <p class="project__description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere,esse ullam
-                            nemo velit voluptatum excepturi.</p>
-                    </div>
-                    <!--============== project 3 =============-->
-                    <div class="project__content">
-                        <img src="" alt="Tourism Website" class="project__img">
-                        <h3 class="project__title">Tourism Website</h3>
-                        <p class="project__description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere,esse ullam
-                            nemo velit voluptatum excepturi.</p>
-                    </div>
-                </div>
+          </div>
+          <!--============== Education ============-->
+          <div class="qualification__wrapper">
+            <h3 class="qualification__name">
+              <i class="ri-booklet-fill"></i>
+              Education
+            </h3>
+            <div class="d-grid qualification__content">
+              <!-- Education 1-->
+              <div class="qualification__item">
+                <h3 class="qualification__title">Sri Chaitanya High School</h3>
+                <p class="qualification__description">
+                  Secured 10GPA in SSC board examination. Class leader for three
+                  consecutive years
+                </p>
+                <span class="qualification__date">2012 - 2019</span>
+              </div>
+              <!-- Education 2-->
+              <div class="qualification__item">
+                <h3 class="qualification__title">Viswasai Junior College</h3>
+                <p class="qualification__description">
+                  Secured 97.9% in Intermediate state board examination.Obtained
+                  good ranks in after 12th competative exams.
+                </p>
+                <span class="qualification__date">2019 - 2021</span>
+              </div>
+              <!-- Education 3-->
+              <div class="qualification__item">
+                <h3 class="qualification__title">
+                  Under graduate at IIT Bhilai
+                </h3>
+                <p class="qualification__description">
+                  Pursuing Second year in computer science.Acquired hands
+                  knowledge on trending programming laguages and web
+                  development.
+                </p>
+                <span class="qualification__date">2021 - 2025</span>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="qualification__footer">
+            <p class="qualification__footer-text">See my full resume</p>
+            <a href="#" class="btn btn--primary">Resume</a>
+          </div>
+        </div>
+      </section>
 
-        <!--=================== Testimonials ====================-->
-        <section id="testimonial" class="section testimonial">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Achievements</h2>
-                    <span class="section__subtitle">Awards Recieved</span>
-                </div>
-                <div class="testimonial__wrapper swiper">
-
-                    <div class="swiper-wrapper">
-                        <!--========= testimonial 1 ============ -->
-                        <div class="testimonial__card swiper-slide">
-                            <img src="" alt="JEE" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">Competative Exams</h3>
-                                <span class="testimonial__occupation">Top 3 percentile</span>
-                            </div>
-                        </div>
-                        <!--========= testimonial 2 ============ -->
-                        <div class="testimonial__card swiper-slide">
-                            <img src="" alt="NTSE" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">Gold medal in level1 math</h3>
-                                <span class="testimonial__occupation">NTSE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+      <!--=================== services ====================-->
+      <section id="service" class="section service">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Position of Responsibilites</h2>
+            <span class="section__subtitle">PoRs</span>
+          </div>
+          <div class="d-grid service__wrapper">
+            <!--========= service card 1 =========-->
+            <div class="service__card">
+              <div class="service__icon">
+                <i class="ri-layout-4-fill"></i>
+              </div>
+              <h3 class="service__title">
+                Management committee_NSSbr>Executive
+              </h3>
             </div>
-        </section>
-
-        <!--=================== Contact ====================-->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <div class="d-grid contact__wrapper">
-                    <div class="contact__content">
-                        <h2 class="contact__title">Interested in Knowing more? Let's talk</h2>
-                    </div>
-                    <div class="contact__btn">
-                        <a href="#" class="btn btn--secondary">Get in touch</a>
-                    </div>
-                </div>
+            <!--========= service card 2 =========-->
+            <div class="service__card">
+              <div class="service__icon">
+                <i class="ri-code-s-slash-line"></i>
+              </div>
+              <h3 class="service__title">Drishya, Renaissance<br />IIC</h3>
             </div>
-        </section>
+            <!--========= service card 3 =========-->
+            <div class="service__card">
+              <div class="service__icon">
+                <i class="ri-pen-nib-fill"></i>
+              </div>
+              <h3 class="service__title">
+                Student Mentor<br />In student mentorship program 2022
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== Projects ====================-->
+      <section id="project" class="section project">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">My recent work</span>
+          </div>
+          <div class="d-grid project__wrapper">
+            <!--============== project 1 =============-->
+            <div class="project__content">
+              <img src="" alt="To Do List" class="project__img" />
+              <h3 class="project__title">To Do List</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facere,esse ullam nemo velit voluptatum excepturi.
+              </p>
+            </div>
+            <!--============== project 2 =============-->
+            <div class="project__content">
+              <img src="" alt="Google Keeper clone " class="project__img" />
+              <h3 class="project__title">Google Keeper clone</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facere,esse ullam nemo velit voluptatum excepturi.
+              </p>
+            </div>
+            <!--============== project 3 =============-->
+            <div class="project__content">
+              <img src="" alt="Tourism Website" class="project__img" />
+              <h3 class="project__title">Tourism Website</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facere,esse ullam nemo velit voluptatum excepturi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== Testimonials ====================-->
+      <section id="testimonial" class="section testimonial">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Achievements</h2>
+            <span class="section__subtitle">Awards Recieved</span>
+          </div>
+          <div class="testimonial__wrapper swiper">
+            <div class="swiper-wrapper">
+              <!--========= testimonial 1 ============ -->
+              <div class="testimonial__card swiper-slide">
+                <img src="" alt="JEE" class="testimonial__img" />
+                <div class="testimonial__content">
+                  <p class="testimonial__description">
+                    Lorem ipsum dolor sit amet consectetur. Dignissim tincidunt
+                    egestas vitae porttitor nulla gravida commodo.
+                  </p>
+                  <h3 class="testimonial__name">Competative Exams</h3>
+                  <span class="testimonial__occupation">Top 3 percentile</span>
+                </div>
+              </div>
+              <!--========= testimonial 2 ============ -->
+              <div class="testimonial__card swiper-slide">
+                <img src="" alt="NTSE" class="testimonial__img" />
+                <div class="testimonial__content">
+                  <p class="testimonial__description">
+                    Lorem ipsum dolor sit amet consectetur. Dignissim tincidunt
+                    egestas vitae porttitor nulla gravida commodo.
+                  </p>
+                  <h3 class="testimonial__name">Gold medal in level1 math</h3>
+                  <span class="testimonial__occupation">NTSE</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== Contact ====================-->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="d-grid contact__wrapper">
+            <div class="contact__content">
+              <h2 class="contact__title">
+                Interested in Knowing more? Let's talk
+              </h2>
+            </div>
+            <div class="contact__btn">
+              <a href="#" class="btn btn--secondary">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!--=================== footer ====================-->
     <footer id="footer" class="footer">
-        <div class="container">
-            <div class="d-grid footer__wrapper">
-                <div class="footer__content">
-                    <h4 class="footer__title">Follow Me</h4>
-                    <ul class="footer__social-list">
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <i class="ri-github-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Email Me</h4>
-                    <a href="#" class="footer__contact">katalakshmil@iitbhilai.ac.in</a>
-                </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Call Me</h4>
-                    <a href="#" class="footer__contact">(+91)6300789069</a>
-                </div>
-            </div>
-            <p class="footer__copyright">&copy; 2023 Lasya Reddy . All Rights Reserved</p>
+      <div class="container">
+        <div class="d-grid footer__wrapper">
+          <div class="footer__content">
+            <h4 class="footer__title">Follow Me</h4>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <i class="ri-github-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h4 class="footer__title">Email Me</h4>
+            <a href="#" class="footer__contact">katalakshmil@iitbhilai.ac.in</a>
+          </div>
+          <div class="footer__content">
+            <h4 class="footer__title">Call Me</h4>
+            <a href="#" class="footer__contact">(+91)6300789069</a>
+          </div>
         </div>
+        <p class="footer__copyright">
+          &copy; 2023 Lasya Reddy . All Rights Reserved
+        </p>
+      </div>
     </footer>
 
     <!--=================== SwiperJS  ====================-->
@@ -382,6 +449,5 @@
 
     <!--=================== Main JS ====================-->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
